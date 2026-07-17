@@ -24,7 +24,7 @@ jobs:
         run: chmod +x HomeMonitor/gradlew
 
       - name: Build with Gradle
-        run: cd HomeMonitor && ./gradlew assembleRelease
+        run: cd HomeMonitor && ./gradlew assembleRelease --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
